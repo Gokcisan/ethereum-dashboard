@@ -1,0 +1,8 @@
+[server]
+headless = true
+
+[theme]
+base = "light"
+
+[general]
+mainScript = "streamlit_app_supabase.py"
