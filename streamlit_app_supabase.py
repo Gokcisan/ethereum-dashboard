@@ -22,8 +22,8 @@ def get_news_data():
     return df
 
 # 🎯 Başlık ve açıklama
-st.title("🛰️ Ethereum News & Price Dashboard (Supabase)")
-st.write("Real-time news and crypto prices fetched from your Supabase database.")
+st.title("🛰️ Ethereum News & Price")
+st.write("Real-time news and crypto prices.")
 
 # 🔍 Verileri çek
 price_df = get_price_data()
@@ -79,5 +79,5 @@ with tab2:
 
 # 💹 Sekme 3: Tüm fiyat verisi (haberlerden bağımsız)
 with tab3:
-    st.markdown("### 💹 Ethereum Full Price History (From Supabase)")
+    st.markdown("### 💹 Ethereum Prices")
     st.line_chart(price_df.set_index("date")[["open", "close"]])
