@@ -1,13 +1,14 @@
 # 📦 Gerekli kütüphaneleri içe aktar
 import streamlit as st
 import pandas as pd
-import os
+# import os
 import psycopg
-from dotenv import load_dotenv
+# from dotenv import load_dotenv
 
 # 🌱 .env dosyasındaki Supabase bağlantı bilgisini yükle
-load_dotenv()
-dbconn = os.getenv("DBCONN")
+# load_dotenv()
+# dbconn = os.getenv("DBCONN")
+dbconn = st.secrets["DBCONN"]
 
 # 📊 Supabase'ten fiyat verisini çek
 def get_price_data():
