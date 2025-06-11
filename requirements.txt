@@ -1,4 +1,1 @@
-streamlit
-pandas
-psycopg
-psycopg-binary
+streamlit\npsycopg\npsycopg-binary\npandas
