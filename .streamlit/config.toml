@@ -5,4 +5,4 @@ headless = true
 base = "light"
 
 [general]
-mainScript = "streamlit_app_supabase.py"
+mainScript = "streamlit_app.py"
